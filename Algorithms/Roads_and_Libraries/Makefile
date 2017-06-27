@@ -6,4 +6,4 @@ algo_libraries.o: algo_libraries.cpp
 	g++ -Wall -Werror -c algo_libraries.cpp
 	
 clean:
-	rm *.o *.exe *.dot *.jpg
+	rm *.o *.exe
