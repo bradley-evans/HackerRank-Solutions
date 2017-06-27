@@ -45,3 +45,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+
+# Stuff Nobody Needs to See
+.exe
+.sublime-project
+.sublime-workspace
