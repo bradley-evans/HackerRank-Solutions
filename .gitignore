@@ -47,6 +47,6 @@ Temporary Items
 .apdisk
 
 # Stuff Nobody Needs to See
-.exe
-.sublime-project
-.sublime-workspace
+*.exe
+*.sublime-project
+*.sublime-workspace
