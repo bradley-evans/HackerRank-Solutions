@@ -1,15 +1,9 @@
-main.exe: main.o HashTable.o WordEntry.o
-	g++ -Wall -Werror main.o HashTable.o WordEntry.o -o main.exe 
-	./main.exe
+algo_libraries.exe: algo_libraries.o
+	g++ -Wall -Werror algo_libraries.o -o algo_libraries.exe 
+	./algo_libraries.exe < test.txt
 	
-main.o: main.cpp HashTable.cpp HashTable.h WordEntry.cpp WordEntry.h
-	g++ -Wall -Werror -c main.cpp HashTable.cpp WordEntry.cpp
+algo_libraries.o: algo_libraries.cpp
+	g++ -Wall -Werror -c algo_libraries.cpp
 	
-HashTable.o: HashTable.cpp HashTable.h WordEntry.cpp WordEntry.h
-	g++ -Wall -Werror -c HashTable.cpp
-
-WordEntry.o: WordEntry.cpp WordEntry.h
-	g++ -Wall -Werror -c WordEntry.cpp
-
 clean:
 	rm *.o *.exe *.dot *.jpg
